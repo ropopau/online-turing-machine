@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "otms"
+version = "0.1.0"
+description = "Online turing machine simulator backend"
+authors = ["Sanghyeon PARK"]
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.115.11"
+pydantic = "^2.10.6"
+pymongo = "^4.11.2"
+pika = "^1.3.2"
+
+
+[tool.poetry.dev-dependencies]
+pytest = "^8.2.1" 
+pre-commit = "^3.7"
+uvicorn = "^0.34.0"
+
+black = "^24.4"
+flake8 = "^7.1.1"
+isort = "^5.13"
+git-changelog = "==2.5.2"
+
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
